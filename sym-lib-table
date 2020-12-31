@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name wemos_mini)(type Legacy)(uri "/home/balazs/Documents/Kicad_Libs/wemos d1/wemos-d1-mini-kicad-master/libraries/wemos_mini.lib")(options "")(descr ""))
+  (lib (name RF_24G_Gateway-rescue)(type Legacy)(uri ${KIPRJMOD}/RF_24G_Gateway-rescue.lib)(options "")(descr ""))
+)

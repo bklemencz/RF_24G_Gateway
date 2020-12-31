@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Shutter_RF)(type KiCad)(uri "/home/balazs/Documents/Shutter Ctrl/Shutter_RF/Shutter_RF.pretty")(options "")(descr ""))
+  (lib (name wemos-d1-mini)(type KiCad)(uri "/home/balazs/Documents/Kicad_Libs/wemos d1/wemos-d1-mini-kicad-master/modules/wemos-d1-mini.pretty")(options "")(descr ""))
+)

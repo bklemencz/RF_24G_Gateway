@@ -1,0 +1,648 @@
+EESchema Schematic File Version 4
+LIBS:RF_24G_Gateway-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4050 3700 3650 3700
+Wire Wire Line
+	4050 3600 3650 3600
+$Comp
+L Converter_ACDC:HS-40003 PS1
+U 1 1 5DE260B7
+P 4550 2300
+F 0 "PS1" H 4550 2625 50  0000 C CNN
+F 1 "HS-40003" H 4550 2534 50  0000 C CNN
+F 2 "Shutter_RF:5V700mA_ACDC" H 4550 2000 50  0001 C CNN
+F 3 "http://www.tme.eu/de/Document/d4b3c52125889c3435af182c9515c76b/HS40003.pdf" H 4550 1900 50  0001 C CNN
+	1    4550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2200 3800 2200
+Wire Wire Line
+	4150 2400 3800 2400
+Wire Wire Line
+	4950 2200 5100 2200
+Wire Wire Line
+	5100 2200 5100 2150
+Wire Wire Line
+	4950 2400 5100 2400
+Wire Wire Line
+	5100 2400 5100 2450
+$Comp
+L power:GND #PWR03
+U 1 1 5DE260C4
+P 5100 2450
+F 0 "#PWR03" H 5100 2200 50  0001 C CNN
+F 1 "GND" H 5105 2277 50  0000 C CNN
+F 2 "" H 5100 2450 50  0001 C CNN
+F 3 "" H 5100 2450 50  0001 C CNN
+	1    5100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5DE260CA
+P 5100 2150
+F 0 "#PWR02" H 5100 2000 50  0001 C CNN
+F 1 "+5V" H 5115 2323 50  0000 C CNN
+F 2 "" H 5100 2150 50  0001 C CNN
+F 3 "" H 5100 2150 50  0001 C CNN
+	1    5100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5DE260D0
+P 5150 3050
+F 0 "#PWR06" H 5150 2900 50  0001 C CNN
+F 1 "+3.3V" H 5165 3223 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 3050
+$Comp
+L power:+5V #PWR05
+U 1 1 5DE260D8
+P 3950 3000
+F 0 "#PWR05" H 3950 2850 50  0001 C CNN
+F 1 "+5V" H 3965 3173 50  0000 C CNN
+F 2 "" H 3950 3000 50  0001 C CNN
+F 3 "" H 3950 3000 50  0001 C CNN
+	1    3950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3000 3950 3100
+Wire Wire Line
+	3950 3100 4050 3100
+Wire Wire Line
+	4050 3200 3450 3200
+Wire Wire Line
+	3450 3200 3450 3300
+$Comp
+L power:GND #PWR07
+U 1 1 5DE260E2
+P 3450 3300
+F 0 "#PWR07" H 3450 3050 50  0001 C CNN
+F 1 "GND" H 3455 3127 50  0000 C CNN
+F 2 "" H 3450 3300 50  0001 C CNN
+F 3 "" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	1    0    0    -1  
+$EndComp
+Text Label 3800 2200 0    50   ~ 0
+L
+Text Label 3800 2400 0    50   ~ 0
+N
+Wire Wire Line
+	5050 3600 5400 3600
+Wire Wire Line
+	4050 3300 3650 3300
+Wire Wire Line
+	5050 3500 5400 3500
+Wire Wire Line
+	5050 3400 5400 3400
+Wire Wire Line
+	5050 3300 5400 3300
+Wire Wire Line
+	5050 3200 5400 3200
+Text Label 5200 3200 0    50   ~ 0
+SS
+Text Label 5200 3300 0    50   ~ 0
+MOSI
+Text Label 5200 3400 0    50   ~ 0
+MISO
+Text Label 5200 3500 0    50   ~ 0
+SCK
+Wire Wire Line
+	4050 3500 3650 3500
+Wire Wire Line
+	4050 3400 3650 3400
+Text Label 3650 3600 0    50   ~ 0
+SCL
+Text Label 3650 3500 0    50   ~ 0
+SDA
+Wire Wire Line
+	4050 3800 3650 3800
+$Comp
+L RF_24G_Gateway-rescue:LT8920_Mini-BK_Common U1
+U 1 1 5DE47635
+P 7400 2300
+F 0 "U1" H 7100 2750 60  0000 C CNN
+F 1 "LT8920_Mini" H 7700 2700 60  0000 C CNN
+F 2 "Shutter_RF:XY-WB_LT8920_Nosilk" H 7400 2300 60  0001 C CNN
+F 3 "" H 7400 2300 60  0000 C CNN
+	1    7400 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8100 2400
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5DE47A55
+P 7400 1600
+F 0 "#PWR01" H 7400 1450 50  0001 C CNN
+F 1 "+3.3V" H 7415 1773 50  0000 C CNN
+F 2 "" H 7400 1600 50  0001 C CNN
+F 3 "" H 7400 1600 50  0001 C CNN
+	1    7400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1600 7400 1650
+$Comp
+L power:GND #PWR04
+U 1 1 5DE47D71
+P 7400 3000
+F 0 "#PWR04" H 7400 2750 50  0001 C CNN
+F 1 "GND" H 7405 2827 50  0000 C CNN
+F 2 "" H 7400 3000 50  0001 C CNN
+F 3 "" H 7400 3000 50  0001 C CNN
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2900 7400 2950
+$Comp
+L RF_24G_Gateway-rescue:C_Cer_SMD_0805-BK_Common C1
+U 1 1 5DE480BF
+P 8350 2650
+F 0 "C1" H 8442 2696 50  0000 L CNN
+F 1 "100n" H 8442 2605 50  0000 L CNN
+F 2 "KiCad/Capacitors_SMD.pretty:C_0805" H 8350 2500 50  0001 C CNN
+F 3 "" H 8350 2650 50  0000 C CNN
+	1    8350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_24G_Gateway-rescue:R_SMD_0805-BK_Common R1
+U 1 1 5DE48154
+P 8350 1850
+F 0 "R1" H 8409 1896 50  0000 L CNN
+F 1 "10K" H 8409 1805 50  0000 L CNN
+F 2 "KiCad/Resistors_SMD.pretty:R_0805" H 8400 1700 50  0001 C CNN
+F 3 "" H 8350 1850 50  0000 C CNN
+	1    8350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1750 8350 1650
+Wire Wire Line
+	8350 1650 7400 1650
+Connection ~ 7400 1650
+Wire Wire Line
+	7400 1650 7400 1700
+Wire Wire Line
+	8350 1950 8350 2200
+Wire Wire Line
+	8350 2750 8350 2950
+Wire Wire Line
+	8350 2950 7400 2950
+Connection ~ 7400 2950
+Wire Wire Line
+	7400 2950 7400 3000
+Wire Wire Line
+	8100 2200 8350 2200
+Connection ~ 8350 2200
+Wire Wire Line
+	8350 2200 8350 2550
+Wire Wire Line
+	6700 2100 6250 2100
+Wire Wire Line
+	6700 2200 6250 2200
+Wire Wire Line
+	6700 2400 6250 2400
+Wire Wire Line
+	6700 2500 6250 2500
+Text Label 6250 2400 0    50   ~ 0
+SS
+Text Label 6250 2500 0    50   ~ 0
+SCK
+Text Label 6250 2100 0    50   ~ 0
+MISO
+Text Label 6250 2200 0    50   ~ 0
+MOSI
+Text Label 5200 3600 0    50   ~ 0
+LED
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5DE4AD7D
+P 7550 3750
+F 0 "J1" H 7630 3742 50  0000 L CNN
+F 1 "BME280" H 7630 3651 50  0000 L CNN
+F 2 "KiCad/Pin_Headers.pretty:Pin_Header_Straight_1x04_Pitch2.54mm" H 7550 3750 50  0001 C CNN
+F 3 "~" H 7550 3750 50  0001 C CNN
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3650 7000 3650
+Wire Wire Line
+	7350 3850 7000 3850
+Wire Wire Line
+	7350 3950 7000 3950
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5DE4C7B5
+P 7000 3600
+F 0 "#PWR08" H 7000 3450 50  0001 C CNN
+F 1 "+3.3V" H 7015 3773 50  0000 C CNN
+F 2 "" H 7000 3600 50  0001 C CNN
+F 3 "" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5DE4C7D2
+P 6750 3800
+F 0 "#PWR09" H 6750 3550 50  0001 C CNN
+F 1 "GND" H 6755 3627 50  0000 C CNN
+F 2 "" H 6750 3800 50  0001 C CNN
+F 3 "" H 6750 3800 50  0001 C CNN
+	1    6750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3750 6750 3800
+Wire Wire Line
+	6750 3750 7350 3750
+Wire Wire Line
+	7000 3600 7000 3650
+Text Label 7000 3850 0    50   ~ 0
+SCL
+Text Label 7000 3950 0    50   ~ 0
+SDA
+$Comp
+L RF_24G_Gateway-rescue:MAX485-BK_Common U3
+U 1 1 5DE4D822
+P 4550 5050
+F 0 "U3" H 4550 5487 60  0000 C CNN
+F 1 "MAX485" H 4550 5381 60  0000 C CNN
+F 2 "KiCad/Housings_SOIC.pretty:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4250 4700 60  0001 C CNN
+F 3 "" H 4550 5050 60  0000 C CNN
+	1    4550 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 4900
+Wire Wire Line
+	4150 5000 4100 5000
+Wire Wire Line
+	4100 5000 4100 5050
+Wire Wire Line
+	4100 5100 4150 5100
+Wire Wire Line
+	4100 5050 3750 5050
+Wire Wire Line
+	3750 5050 3750 4750
+Connection ~ 4100 5050
+Wire Wire Line
+	4100 5050 4100 5100
+Wire Wire Line
+	4950 4900 5100 4900
+Wire Wire Line
+	5100 4900 5100 4750
+Wire Wire Line
+	4950 5200 5100 5200
+Wire Wire Line
+	5100 5200 5100 5300
+$Comp
+L power:GND #PWR014
+U 1 1 5DE50B40
+P 5100 5400
+F 0 "#PWR014" H 5100 5150 50  0001 C CNN
+F 1 "GND" H 5105 5227 50  0000 C CNN
+F 2 "" H 5100 5400 50  0001 C CNN
+F 3 "" H 5100 5400 50  0001 C CNN
+	1    5100 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5200 3750 5200
+Text Label 3750 5200 0    50   ~ 0
+LED
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5DE518D4
+P 7550 4500
+F 0 "J2" H 7629 4492 50  0000 L CNN
+F 1 "LED" H 7629 4401 50  0000 L CNN
+F 2 "Shutter_RF:JST_B4B-XH-A_Nosilk" H 7550 4500 50  0001 C CNN
+F 3 "~" H 7550 4500 50  0001 C CNN
+	1    7550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5DE519B6
+P 3750 4750
+F 0 "#PWR013" H 3750 4600 50  0001 C CNN
+F 1 "+5V" H 3765 4923 50  0000 C CNN
+F 2 "" H 3750 4750 50  0001 C CNN
+F 3 "" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5DE519F9
+P 5100 4700
+F 0 "#PWR011" H 5100 4550 50  0001 C CNN
+F 1 "+5V" H 5115 4873 50  0000 C CNN
+F 2 "" H 5100 4700 50  0001 C CNN
+F 3 "" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5DE51A3C
+P 7250 4350
+F 0 "#PWR010" H 7250 4200 50  0001 C CNN
+F 1 "+5V" H 7265 4523 50  0000 C CNN
+F 2 "" H 7250 4350 50  0001 C CNN
+F 3 "" H 7250 4350 50  0001 C CNN
+	1    7250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4350 7250 4400
+Wire Wire Line
+	7250 4400 7350 4400
+$Comp
+L power:GND #PWR012
+U 1 1 5DE52801
+P 7250 4750
+F 0 "#PWR012" H 7250 4500 50  0001 C CNN
+F 1 "GND" H 7255 4577 50  0000 C CNN
+F 2 "" H 7250 4750 50  0001 C CNN
+F 3 "" H 7250 4750 50  0001 C CNN
+	1    7250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4700 7250 4700
+Wire Wire Line
+	7250 4700 7250 4750
+Wire Wire Line
+	7350 4500 6950 4500
+Wire Wire Line
+	7350 4600 6950 4600
+Wire Wire Line
+	4950 5000 5300 5000
+Wire Wire Line
+	4950 5100 5300 5100
+Text Label 5100 5000 0    50   ~ 0
+B
+Text Label 5100 5100 0    50   ~ 0
+A
+Text Label 6950 4500 0    50   ~ 0
+A
+Text Label 6950 4600 0    50   ~ 0
+B
+NoConn ~ 3650 3700
+NoConn ~ 3650 3800
+NoConn ~ 5050 3800
+NoConn ~ 3650 3300
+$Comp
+L RF_24G_Gateway-rescue:WeMos_mini-wemos_mini U2
+U 1 1 5DE2607A
+P 4550 3450
+F 0 "U2" H 4550 4087 60  0000 C CNN
+F 1 "WeMos_mini" H 4550 3981 60  0000 C CNN
+F 2 "wemos-d1-mini:wemos-d1-mini-with-pin-header-and-connector" H 4550 3981 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 4550 3981 60  0001 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_24G_Gateway-rescue:R_SMD_0805-BK_Common R2
+U 1 1 5DE60BD4
+P 6900 5600
+F 0 "R2" H 6959 5646 50  0000 L CNN
+F 1 "3K9" H 6959 5555 50  0000 L CNN
+F 2 "KiCad/Resistors_SMD.pretty:R_0805" H 6950 5450 50  0001 C CNN
+F 3 "" H 6900 5600 50  0000 C CNN
+	1    6900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_24G_Gateway-rescue:R_SMD_0805-BK_Common R3
+U 1 1 5DE60CC4
+P 6900 5900
+F 0 "R3" H 6959 5946 50  0000 L CNN
+F 1 "1K" H 6959 5855 50  0000 L CNN
+F 2 "KiCad/Resistors_SMD.pretty:R_0805" H 6950 5750 50  0001 C CNN
+F 3 "" H 6900 5900 50  0000 C CNN
+	1    6900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5700 6900 5750
+$Comp
+L power:GND #PWR017
+U 1 1 5DE630D7
+P 6900 6100
+F 0 "#PWR017" H 6900 5850 50  0001 C CNN
+F 1 "GND" H 6905 5927 50  0000 C CNN
+F 2 "" H 6900 6100 50  0001 C CNN
+F 3 "" H 6900 6100 50  0001 C CNN
+	1    6900 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 6000 6900 6100
+Wire Wire Line
+	6400 5750 6900 5750
+Connection ~ 6900 5750
+Wire Wire Line
+	6900 5750 6900 5800
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5DE6559D
+P 7550 5400
+F 0 "J3" H 7629 5442 50  0000 L CNN
+F 1 "MQ135" H 7629 5351 50  0000 L CNN
+F 2 "Shutter_RF:JST_B3B-XH-A_Nosilk" H 7550 5400 50  0001 C CNN
+F 3 "~" H 7550 5400 50  0001 C CNN
+	1    7550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5DE66A96
+P 7250 5250
+F 0 "#PWR015" H 7250 5100 50  0001 C CNN
+F 1 "+5V" H 7265 5423 50  0000 C CNN
+F 2 "" H 7250 5250 50  0001 C CNN
+F 3 "" H 7250 5250 50  0001 C CNN
+	1    7250 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5250 7250 5300
+Wire Wire Line
+	7250 5300 7350 5300
+$Comp
+L power:GND #PWR016
+U 1 1 5DE67EA1
+P 7250 5550
+F 0 "#PWR016" H 7250 5300 50  0001 C CNN
+F 1 "GND" H 7255 5377 50  0000 C CNN
+F 2 "" H 7250 5550 50  0001 C CNN
+F 3 "" H 7250 5550 50  0001 C CNN
+	1    7250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5500 7250 5500
+Wire Wire Line
+	7250 5500 7250 5550
+Wire Wire Line
+	7350 5400 6900 5400
+Wire Wire Line
+	6900 5400 6900 5500
+Text Label 6400 5750 0    50   ~ 0
+AIRQ
+Wire Wire Line
+	5050 3700 5400 3700
+Text Label 5200 3700 0    50   ~ 0
+AIRQ
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5DE74E9C
+P 7400 1000
+F 0 "J4" H 7479 992 50  0000 L CNN
+F 1 "Mains" H 7479 901 50  0000 L CNN
+F 2 "pelrun/libKiCad/footprint/w_conn_screw.pretty:mors_2p" H 7400 1000 50  0001 C CNN
+F 3 "~" H 7400 1000 50  0001 C CNN
+	1    7400 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1000 7000 1000
+Wire Wire Line
+	7200 1100 7000 1100
+Text Label 7000 1000 0    50   ~ 0
+N
+Text Label 7000 1100 0    50   ~ 0
+L
+$Comp
+L RF_24G_Gateway-rescue:C_Cer_SMD_0805-BK_Common C2
+U 1 1 5DE78A6A
+P 5550 5050
+F 0 "C2" H 5642 5096 50  0000 L CNN
+F 1 "100n" H 5642 5005 50  0000 L CNN
+F 2 "KiCad/Capacitors_SMD.pretty:C_0805" H 5550 4900 50  0001 C CNN
+F 3 "" H 5550 5050 50  0000 C CNN
+	1    5550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4950 5550 4750
+Wire Wire Line
+	5550 4750 5100 4750
+Connection ~ 5100 4750
+Wire Wire Line
+	5100 4750 5100 4700
+Wire Wire Line
+	5550 5150 5550 5300
+Wire Wire Line
+	5550 5300 5100 5300
+Connection ~ 5100 5300
+Wire Wire Line
+	5100 5300 5100 5400
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5DE7F44C
+P 6100 1150
+F 0 "J5" H 6019 825 50  0000 C CNN
+F 1 "Temp" H 6019 916 50  0000 C CNN
+F 2 "KiCad/kicad-footprints/Connector_PinHeader_2.54mm.pretty:PinHeader_1x03_P2.54mm_Vertical" H 6100 1150 50  0001 C CNN
+F 3 "~" H 6100 1150 50  0001 C CNN
+	1    6100 1150
+	1    0    0    1   
+$EndComp
+$Comp
+L RF_24G_Gateway-rescue:R_SMD_0805-BK_Common R4
+U 1 1 5DE7F5B4
+P 5450 1000
+F 0 "R4" H 5509 1046 50  0000 L CNN
+F 1 "4K7" H 5509 955 50  0000 L CNN
+F 2 "KiCad/Resistors_SMD.pretty:R_0805" H 5500 850 50  0001 C CNN
+F 3 "" H 5450 1000 50  0000 C CNN
+	1    5450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5DE8130C
+P 5800 1300
+F 0 "#PWR020" H 5800 1050 50  0001 C CNN
+F 1 "GND" H 5805 1127 50  0000 C CNN
+F 2 "" H 5800 1300 50  0001 C CNN
+F 3 "" H 5800 1300 50  0001 C CNN
+	1    5800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1250 5800 1250
+Wire Wire Line
+	5800 1250 5800 1300
+$Comp
+L power:+5V #PWR019
+U 1 1 5DE83086
+P 5750 1000
+F 0 "#PWR019" H 5750 850 50  0001 C CNN
+F 1 "+5V" H 5765 1173 50  0000 C CNN
+F 2 "" H 5750 1000 50  0001 C CNN
+F 3 "" H 5750 1000 50  0001 C CNN
+	1    5750 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1000 5750 1050
+Wire Wire Line
+	5750 1050 5900 1050
+$Comp
+L power:+3.3V #PWR018
+U 1 1 5DE84FC9
+P 5450 850
+F 0 "#PWR018" H 5450 700 50  0001 C CNN
+F 1 "+3.3V" H 5465 1023 50  0000 C CNN
+F 2 "" H 5450 850 50  0001 C CNN
+F 3 "" H 5450 850 50  0001 C CNN
+	1    5450 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 850  5450 900 
+Wire Wire Line
+	5450 1100 5450 1150
+Wire Wire Line
+	5450 1150 5900 1150
+Wire Wire Line
+	5450 1150 5150 1150
+Connection ~ 5450 1150
+Text Label 5150 1150 0    50   ~ 0
+Temp
+Text Label 3650 3400 0    50   ~ 0
+Temp
+$EndSCHEMATC

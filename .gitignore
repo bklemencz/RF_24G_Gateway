@@ -21,6 +21,8 @@ fp-info-cache
 *.dsn
 *.ses
 
+Gerber/*
+
 # Exported BOM files
 *.xml
 *.csv

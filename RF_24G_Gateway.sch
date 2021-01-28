@@ -645,4 +645,26 @@ Text Label 5150 1150 0    50   ~ 0
 Temp
 Text Label 3650 3400 0    50   ~ 0
 Temp
+Text Notes 3050 3850 0    50   ~ 0
+GPIO1
+Text Notes 3050 3750 0    50   ~ 0
+GPIO3
+Text Notes 3050 3650 0    50   ~ 0
+GPIO5
+Text Notes 3050 3550 0    50   ~ 0
+GPIO4
+Text Notes 3050 3450 0    50   ~ 0
+GPIO0
+Text Notes 3050 3350 0    50   ~ 0
+GPIO2
+Text Notes 5500 3625 0    50   ~ 0
+GPIO16
+Text Notes 5500 3525 0    50   ~ 0
+GPIO14
+Text Notes 5500 3425 0    50   ~ 0
+GPIO12
+Text Notes 5500 3325 0    50   ~ 0
+GPIO13
+Text Notes 5500 3225 0    50   ~ 0
+GPIO15
 $EndSCHEMATC
